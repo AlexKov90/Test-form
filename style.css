@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+}
+
+.errorMessage {
+    display: none;
+}
+
+input.formInvalid+.errorMessage {
+    color: red;
+    display: block;
+    margin-top: 10px;
+}
+
+.form {
+    width: 773px;
+    min-width: 320px;
+    min-height: 437px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 30px;
+    background: #EFEFEF;
+}
+
+.formLabel {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: block;
+    width: 32px;
+    height: 19px;
+}
+
+.formsControl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formControl {
+    flex-grow: 1;
+}
+
+.formControl:first-child {
+    margin-right: 20px;
+}
+
+.name {
+    width: 347px;
+    height: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.selectForm {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.font {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+}
+
+.formInput {
+    width: 100%;
+    height: 50px;
+    padding: 0 10px 0 10px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+}
+
+.formInvalid {
+    border: 2px solid red;
+}
+
+.selectForm {
+    width: 100%;
+    height: 50px;
+}
+
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+ :focus::-moz-placeholder {
+    color: transparent;
+}
+
+ :focus:-moz-placeholder {
+    color: transparent;
+}
+
+ :focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+.formSend {
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+    width: 130px;
+    height: 50px;
+    background: #EE811C;
+    border-radius: 5px;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .formControl {
+        width: 100%;
+    }
+    .formControl:first-child {
+        margin-right: 0;
+    }
+    .form {
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+}

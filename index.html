@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form class="form" id="form">
+        <div class="formsControl">
+            <div class="formControl">
+                <label class="formLabel">Name*</label>
+                <input type="text" name="name" class="name formInput font" placeholder="Enter your name">
+                <label class="errorMessage">Fill in the field</label>
+            </div>
+            <div class="formControl">
+                <label for="" class="formLabel">Surname*</label>
+                <input type="text" name="surname" class="name formInput font" placeholder="Enter your surname">
+                <label class="errorMessage">Fill in the field</label>
+            </div>
+        </div>
+        <label for="" class="formLabel">Message*</label>
+        <input type="text" id="messageInput" name="message" class="formInput formMessage font"
+            placeholder="Enter your message">
+        <label class="errorMessage">Fill in the field</label>
+        <label for="" class="formLabel">Question</label>
+        <select name="select" class="selectForm font" size="1">
+            <option value="Option 1" class="font">Option #1</option>
+            <option value="Option 2" class="font">Option #2</option>
+            <option value="Option 3" class="font">Option #3</option>
+        </select>
+        <input type="submit" class="formSend" value="SEND">
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
